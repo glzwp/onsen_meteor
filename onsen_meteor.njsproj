@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{eb2be68c-f796-46a8-9727-3bc613cb54fd}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>webpack.config.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include=".babelrc" />
+    <Content Include=".eslintrc" />
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
+    <Content Include="app\components\App.jsx" />
+    <Content Include="app\components\MainPage.jsx" />
+    <Content Include="app\components\Task.jsx" />
+    <Content Include="app\components\Tasks.jsx" />
+    <Content Include="app\css\font_awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="app\css\font_awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="app\css\font_awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="app\css\font_awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="app\css\font_awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="app\css\font_awesome\fonts\FontAwesome.otf" />
+    <Content Include="app\css\ionicons\css\ionicons.css" />
+    <Content Include="app\css\ionicons\fonts\ionicons.eot" />
+    <Content Include="app\css\ionicons\fonts\ionicons.svg" />
+    <Content Include="app\css\ionicons\fonts\ionicons.ttf" />
+    <Content Include="app\css\ionicons\fonts\ionicons.woff" />
+    <Content Include="app\css\material-design-iconic-font\css\material-design-iconic-font.css" />
+    <Content Include="app\css\material-design-iconic-font\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="app\css\material-design-iconic-font\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="app\css\material-design-iconic-font\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="app\css\material-design-iconic-font\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="app\css\material-design-iconic-font\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="app\css\onsen-css-components-blue-basic-theme.css" />
+    <Content Include="app\css\onsen-css-components-blue-theme.css" />
+    <Content Include="app\css\onsen-css-components-dark-theme.css" />
+    <Content Include="app\css\onsen-css-components-default.css" />
+    <Content Include="app\css\onsen-css-components-purple-theme.css" />
+    <Content Include="app\css\onsen-css-components-sunshine-theme.css" />
+    <Content Include="app\css\onsen-css-components.css" />
+    <Content Include="app\css\onsenui.css" />
+    <Content Include="app\index.jsx" />
+    <Content Include="app\main.css" />
+    <Content Include="app\styles\font_awesome\css\font-awesome.min.css" />
+    <Content Include="app\styles\ionicons\css\ionicons.min.css" />
+    <Content Include="app\styles\material-design-iconic-font\css\material-design-iconic-font.min.css" />
+    <Content Include="package.json" />
+    <Compile Include="app\actions\TaskActions.js" />
+    <Compile Include="app\stores\TaskStore.js" />
+    <Compile Include="karma.conf.js" />
+    <Compile Include="webpack.config.js" />
+    <Content Include="build\index.html" />
+    <Content Include="build\style.bf25a5859b846a31b43f.css" />
+    <Compile Include="build\app.a2cc6bd3bd733ccf9044.js" />
+    <Compile Include="build\manifest.3dabbcfe03862d3b603a.js" />
+    <Compile Include="build\style.bf25a5859b846a31b43f.js" />
+    <Compile Include="build\vendor.30a9c2564dac2f01e6a2.js" />
+    <Compile Include="libs\parts.js" />
+    <Compile Include="tests\demo_test.js" />
+    <Compile Include="app\libs\alt.js" />
+    <Compile Include="app\libs\persist.js" />
+    <Compile Include="app\libs\storage.js" />
+    <Content Include="build\coverage\PhantomJS 2.1.1 (Windows 8 0.0.0)\index.html" />
+    <Content Include="build\coverage\PhantomJS 2.1.1 (Windows 8 0.0.0)\base.css" />
+    <Content Include="build\coverage\PhantomJS 2.1.1 (Windows 8 0.0.0)\prettify.css" />
+    <Content Include="build\coverage\PhantomJS 2.1.1 (Windows 8 0.0.0)\sort-arrow-sprite.png" />
+    <Compile Include="build\coverage\PhantomJS 2.1.1 (Windows 8 0.0.0)\prettify.js" />
+    <Compile Include="build\coverage\PhantomJS 2.1.1 (Windows 8 0.0.0)\sorter.js" />
+    <Content Include="build\coverage\PhantomJS 2.1.1 (Windows 8 0.0.0)\actions\index.html" />
+    <Content Include="build\coverage\PhantomJS 2.1.1 (Windows 8 0.0.0)\actions\NoteActions.js.html" />
+    <Content Include="build\coverage\PhantomJS 2.1.1 (Windows 8 0.0.0)\components\Editable.jsx.html" />
+    <Content Include="build\coverage\PhantomJS 2.1.1 (Windows 8 0.0.0)\components\index.html" />
+    <Content Include="build\coverage\PhantomJS 2.1.1 (Windows 8 0.0.0)\components\Note.jsx.html" />
+    <Content Include="build\coverage\PhantomJS 2.1.1 (Windows 8 0.0.0)\constants\index.html" />
+    <Content Include="build\coverage\PhantomJS 2.1.1 (Windows 8 0.0.0)\constants\itemTypes.js.html" />
+    <Content Include="build\coverage\PhantomJS 2.1.1 (Windows 8 0.0.0)\libs\alt.js.html" />
+    <Content Include="build\coverage\PhantomJS 2.1.1 (Windows 8 0.0.0)\libs\index.html" />
+    <Content Include="build\coverage\PhantomJS 2.1.1 (Windows 8 0.0.0)\stores\index.html" />
+    <Content Include="build\coverage\PhantomJS 2.1.1 (Windows 8 0.0.0)\stores\NoteStore.js.html" />
+    <Content Include="app\styles\font_awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="app\styles\font_awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="app\styles\font_awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="app\styles\font_awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="app\styles\font_awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="app\styles\font_awesome\fonts\FontAwesome.otf" />
+    <Content Include="app\styles\ionicons\fonts\ionicons.eot" />
+    <Content Include="app\styles\ionicons\fonts\ionicons.svg" />
+    <Content Include="app\styles\ionicons\fonts\ionicons.ttf" />
+    <Content Include="app\styles\ionicons\fonts\ionicons.woff" />
+    <Content Include="app\styles\material-design-iconic-font\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="app\styles\material-design-iconic-font\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="app\styles\material-design-iconic-font\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="app\styles\material-design-iconic-font\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="app\styles\material-design-iconic-font\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="app\styles\onsen-css-components-blue-basic-theme.css" />
+    <Content Include="app\styles\onsen-css-components-blue-theme.css" />
+    <Content Include="app\styles\onsen-css-components-dark-theme.css" />
+    <Content Include="app\styles\onsen-css-components-default.css" />
+    <Content Include="app\styles\onsen-css-components-purple-theme.css" />
+    <Content Include="app\styles\onsen-css-components-sunshine-theme.css" />
+    <Content Include="app\styles\onsen-css-components.css" />
+    <Content Include="app\styles\onsenui.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app" />
+    <Folder Include="app\components" />
+    <Folder Include="app\css\font_awesome\fonts\" />
+    <Folder Include="app\css\ionicons\" />
+    <Folder Include="app\css\ionicons\css\" />
+    <Folder Include="app\css\ionicons\fonts\" />
+    <Folder Include="app\css\material-design-iconic-font\" />
+    <Folder Include="app\css\material-design-iconic-font\css\" />
+    <Folder Include="app\css\material-design-iconic-font\fonts\" />
+    <Folder Include="app\libs" />
+    <Folder Include="app\actions\" />
+    <Folder Include="app\stores" />
+    <Folder Include="build" />
+    <Folder Include="build\coverage" />
+    <Folder Include="build\coverage\PhantomJS 2.1.1 (Windows 8 0.0.0)" />
+    <Folder Include="build\coverage\PhantomJS 2.1.1 (Windows 8 0.0.0)\actions" />
+    <Folder Include="build\coverage\PhantomJS 2.1.1 (Windows 8 0.0.0)\components" />
+    <Folder Include="build\coverage\PhantomJS 2.1.1 (Windows 8 0.0.0)\constants" />
+    <Folder Include="build\coverage\PhantomJS 2.1.1 (Windows 8 0.0.0)\libs" />
+    <Folder Include="build\coverage\PhantomJS 2.1.1 (Windows 8 0.0.0)\stores" />
+    <Folder Include="libs" />
+    <Folder Include="app\styles\" />
+    <Folder Include="app\styles\font_awesome\" />
+    <Folder Include="app\styles\font_awesome\css\" />
+    <Folder Include="app\styles\font_awesome\fonts\" />
+    <Folder Include="app\styles\ionicons\" />
+    <Folder Include="app\styles\ionicons\css\" />
+    <Folder Include="app\styles\ionicons\fonts\" />
+    <Folder Include="app\styles\material-design-iconic-font\" />
+    <Folder Include="app\styles\material-design-iconic-font\css\" />
+    <Folder Include="app\styles\material-design-iconic-font\fonts\" />
+    <Folder Include="tests" />
+    <Folder Include="typings\" />
+    <Folder Include="typings\globals\" />
+    <Folder Include="typings\globals\react-dnd\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="typings\globals\react-dnd\index.d.ts" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
