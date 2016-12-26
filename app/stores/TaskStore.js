@@ -11,8 +11,6 @@ class TaskStore {
     }
     create(task) {
         const tasks = this.tasks;
-        task.id = uuid.v4();
-        task.checked = false;
         //It is a feature of Alt that allows us to signify that we are going to alter the store state.
         //Alt will signal the change to possible listeners
         this.setState({
@@ -25,11 +23,11 @@ class TaskStore {
             tasks: this.tasks.filter(task => task.id !== id)
         });
     }
-    /*
+    
     update(updatedTask) {
         const tasks = this.tasks.map(task => {
-            if (note.id === updatedNote.id) {
-                // Object.assign is used to patch the note data here. It
+            if (task.id === updatedTask.id) {
+                // Object.assign is used to patch the task data here. It
                 // mutates target (first parameter). In order to avoid that,
                 // I use {} as its target and apply data on it.
                 //
@@ -43,6 +41,7 @@ class TaskStore {
         // This is same as `this.setState({tasks: tasks})`
         this.setState({ tasks });
     }
+    /*
         getTasksByIds(ids) {
         // 1. Make sure we are operating on an array and
         // map over the ids

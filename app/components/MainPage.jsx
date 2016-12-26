@@ -2,6 +2,7 @@ import AltContainer from 'alt-container';
 import React, { PropTypes } from 'react';
 import ons from 'onsenui';
 import { Page, Toolbar, Input, Fab, Icon, ToolbarButton } from 'react-onsenui';
+import asteroid from './Connect';
 import TaskActions from '../actions/TaskActions';
 import TaskStore from '../stores/TaskStore';
 import Tasks from './Tasks';
@@ -22,8 +23,18 @@ const MainPage = ({navigator}) => {
     const text = inputValue.trim();
 
     if (text) {
-        TaskActions.create({todo:text});
-        //console.log(text);
+        asteroid.call('addTodo', text)
+            .then(result => {
+                /*We subscribe to ToDo collection. So do not call the create action below.It will add two items with same id.*/
+                /*If we don't subscribe, we need to call the create action..*/
+                //TaskActions.create({ id: result,message: text }); 
+                console.log('Server accepted the item. List will be updated from added event');
+                console.log(result);
+            })
+            .catch(error => {
+                console.log('Error');
+                console.error(error);
+            });
 
     } else {
       ons.notification.alert('You must provide a task title!')
